@@ -1,4 +1,3 @@
-import React from 'react'
 import featuredImg from '../assets/featuredImg.png'
 
 const Featuress = () => {
@@ -16,12 +15,39 @@ const Featuress = () => {
             </div>
 
             {/* featured cards */}
-            <div>
-                <div>
-                    <div>
-                        <img src={featuredImg} alt="card-1" />
+            <div className='w-full lg:w-3/4'>
+               <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 items-start md:gap-12 gap-8'>
+                    <div className='bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8
+                        items-center flex justify-center hover:translate-y-4 transition-all duration-300 cursor-pointer'>
+                        <div>
+                            <img src={featuredImg} alt="card-1" />
+                            <h5 className='text-2xl font-semibold text-primary px-5 text-centermt-5'>
+                                Conventient Study Schedule
+                            </h5>
+                        </div>
                     </div>
-                </div>
+
+                    <div className='bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8
+                        items-center flex justify-center hover:translate-y-4 transition-all duration-300 cursor-pointer md:mt-16'>
+                        <div>
+                            <img src={featuredImg} alt="card-1" />
+                            <h5 className='text-2xl font-semibold text-primary px-5 text-centermt-5'>
+                                Available Skilled Mentors
+                            </h5>
+                        </div>
+                    </div>
+
+                    <div className='bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8
+                        items-center flex justify-center hover:translate-y-4 transition-all duration-300 cursor-pointer'>
+                        <div>
+                            <img src={featuredImg} alt="card-1" />
+                            <h5 className='text-2xl font-semibold text-primary px-5 text-centermt-5'>
+                                Rich Community
+                            </h5>
+                        </div>
+                    </div>
+               </div>
+
             </div>
         </div>
     </div>
