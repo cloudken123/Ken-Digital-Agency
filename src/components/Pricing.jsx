@@ -12,7 +12,7 @@ const Pricing= () =>{
         greenthick: "/src/assets/greenthick.png"},
     ]
   return (
-    <div  className='md:px-14 p-4 max-w-s max-auto py-10'>
+    <div  className='md:px-14 p-4 max-w-s max-auto py-10' id='pricing'>
         <div className='text-center'>
             <h2 className='md:text-5xl text-3xl font-extrabold text-primary mb-2'>Our Plans</h2>
             <p className='text-tartiary md:w-1/3 mx-auto px-4'>A simple paragraph is comprised of three major components. 

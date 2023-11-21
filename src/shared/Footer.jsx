@@ -64,10 +64,10 @@ const  Footer = () => {
                  @ KEN 2023. All rights reserved.
             </p>
             <div className='flex items-center space-x-5'>
-                <img src={facebook} alt="facebook-logo" className='w-8 cursor-pointer hover:-transition-all duration-300' />
-                <img src={instagram} alt="instagram-logo" className='w-8 cursor-pointer hover:-transition-all duration-300' />
-                <img src={linkdn} alt="linkdn-logo" className='w-8 cursor-pointer hover:-transition-all duration-300' />
-                <img src={twitter} alt="twitter-logo" className='w-8 cursor-pointer hover:-transition-all duration-300' />
+                <img src={facebook} alt="facebook-logo" className='w-8 cursor-pointer hover:-translate-y-4 transition-all duration-300' />
+                <img src={instagram} alt="instagram-logo" className='w-8 cursor-pointer hover:-translate-y-4 transition-all duration-300' />
+                <img src={linkdn} alt="linkdn-logo" className='w-8 cursor-pointer hover:-translate-y-4 transition-all duration-300' />
+                <img src={twitter} alt="twitter-logo" className='w-8 cursor-pointer hover:-translate-y-4 transition-all duration-300' />
             </div>
         </div>
     </div>

@@ -2,7 +2,7 @@ import aboutImg1 from '../assets/aboutImg1.png'
 import aboutImg2 from '../assets/aboutImg2.png'
 const  About = () => {
   return (
-    <div className='md:px-14 p-4 max-w-s max-auto'>
+    <div className='md:px-14 p-4 max-w-s max-auto' id='about'>
         <div className='flex flex-col md:flex-row justify-between items-center gap-8'>
             <div className='md:w-1/2'>
                 <img src = {aboutImg1} alt="" />
