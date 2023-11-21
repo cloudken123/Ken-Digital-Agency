@@ -1,3 +1,5 @@
+import {motion} from "framer-motion"
+import {fadeIn} from '../variants'
 import React, { useState } from 'react';
 
 const Pricing= () =>{
@@ -12,7 +14,7 @@ const Pricing= () =>{
         greenthick: "/src/assets/greenthick.png"},
     ]
   return (
-    <div  className='md:px-14 p-4 max-w-s max-auto py-10' id='pricing'>
+    <div className='md:px-14 p-4 max-w-s max-auto py-10' id='pricing'>
         <div className='text-center'>
             <h2 className='md:text-5xl text-3xl font-extrabold text-primary mb-2'>Our Plans</h2>
             <p className='text-tartiary md:w-1/3 mx-auto px-4'>A simple paragraph is comprised of three major components. 
@@ -30,7 +32,14 @@ const Pricing= () =>{
             </div>
         </div>
         {/* pricing cards */}
-        <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 md:w-11/12 mx-auto'>
+        <motion.div
+        
+        variants={fadeIn("down", 0.1)}
+             initial = "hidden"
+             whileInView={"show"}
+             viewport={{once:false, amount:0.5}}
+
+        className='grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 md:w-11/12 mx-auto'>
             {
                 packages.map((pkg, index) => <div key = {index} className='border py-10 md:px-6 px-4
                 rounded-lg shadow-3xl'>
@@ -58,7 +67,7 @@ const Pricing= () =>{
                     </ul>
                 </div>)
             }
-        </div>
+        </motion.div>
     </div>
   )
 }

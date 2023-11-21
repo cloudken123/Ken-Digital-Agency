@@ -9,21 +9,30 @@ const Banner = ({banner, heading, subheading, btn1, btn2}) => {
              {/* {banner image} */}
              
              <motion.div
-             variants={fadeIn("down", 0.2)}
+             variants={fadeIn("down", 0.1)}
              initial = "hidden"
              whileInView={"show"}
+             viewport={{once:false, amount:0.5}}
              >
                 <img src={banner} alt="banner" className='lg:h-[386px}'/>
             </motion.div>
+            
             {/* {Banner Contents} */}
-            <div className='md:w-3/5'>
+            <motion.div 
+            
+            variants={fadeIn("up", 0.1)}
+             initial = "hidden"
+             whileInView={"show"}
+             viewport={{once:false, amount:0.5}}
+
+            className='md:w-3/5'>
                 <h2 className='md:text-7xl text-4xl font-bold text-white mb-6 leading-relaxed'>{heading}</h2>
                 <p className='text-[#ebebeb] text-2xl mb-8'>{subheading}</p>
                 <div className='space-x-5 space-y-4'>
                     <button className='btnPrimary'>{btn1}</button>
                     <button className='btnPrimary'>{btn2}</button>
                 </div>
-            </div>
+            </motion.div>
 
         </div>
     </div>
