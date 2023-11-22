@@ -44,7 +44,7 @@ const Featuress = () => {
                     <div className='bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8
                         items-center flex justify-center hover:translate-y-4 transition-all duration-300 cursor-pointer md:mt-16'>
                         <div>
-                            <img src={featuredImg} alt="card-1" />
+                            <img src={featuredImg} alt="card-2" />
                             <h5 className='text-2xl font-semibold text-primary px-5 text-centermt-5'>
                                 Available Skilled Mentors
                             </h5>
@@ -54,7 +54,7 @@ const Featuress = () => {
                     <div className='bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8
                         items-center flex justify-center hover:translate-y-4 transition-all duration-300 cursor-pointer'>
                         <div>
-                            <img src={featuredImg} alt="card-1" />
+                            <img src={featuredImg} alt="card-3" />
                             <h5 className='text-2xl font-semibold text-primary px-5 text-centermt-5'>
                                 Rich Community
                             </h5>

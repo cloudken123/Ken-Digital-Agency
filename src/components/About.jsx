@@ -13,7 +13,7 @@ const  About = () => {
             whileInView={"show"}
             viewport={{once:false, amount:0.5}}
             className='md:w-1/2'>
-                <img src = {aboutImg1} alt="" />
+                <img src = {aboutImg1} alt="img" />
             </motion.div>
             {/* about contents */}
             
@@ -42,7 +42,7 @@ const  About = () => {
              viewport={{once:false, amount:0.7}}
 
             className='md:w-1/2'>
-                <img src = {aboutImg2} alt="" />
+                <img src = {aboutImg2} alt="img" />
             </motion.div>
             {/* about contents */}
             <motion.div 
@@ -50,7 +50,7 @@ const  About = () => {
             variants={fadeIn("right", 0.1)}
             initial = "hidden"
             whileInView={"show"}
-            viewport={{once:false, amount:0.7}}
+            viewport={{once:false, amount:0.5}}
 
             className='md:w-2/5'>
                 <h2 className='md:text-5xl text-3xl font-bold text-primary mb-5 leading-normal'>
